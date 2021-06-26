@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bber发射台</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="p-l-2 p-r-2 body">
+    <div class="btn" id="blog_info_edit">绑定信息修改</div>
+    <div id="blog_info" class="m-b-1">
+      <div>
+        <label for="apiUrl" class="label">输入接口地址</label>
+        <input
+          id="apiUrl"
+          class="m-t-1 m-b-1 input"
+          name="apiUrl"
+          type="text"
+          value=""
+          maxlength="245"
+          placeholder=""
+          required
+        />
+      </div>
+
+      <div>
+        <label for="key" class="label">输入Key</label>
+        <input
+          id="key"
+          class="m-t-1 m-b-1 input"
+          name="key"
+          type="text"
+          value=""
+          maxlength="245"
+          placeholder=""
+          required
+        />
+      </div>
+      <div>
+        <label for="pic7bu" class="label">输入7bu图床Token</label>
+        <input
+          id="pic7bu"
+          class="m-t-1 m-b-1 input"
+          name="pic7bu"
+          type="text"
+          value=""
+          maxlength="245"
+          placeholder="7不图床的token，不输入则匿名上传"
+        />
+      </div>
+
+      <div class="btn" type="submit" name="submit" id="saveKey">
+        <span class="text">保存绑定信息</span>
+      </div>
+    </div>
+
+    <div>
+      <label for="from" class="label">输入From</label>
+      <input
+        id="from"
+        class="m-t-1 m-b-1 input"
+        name="from"
+        type="text"
+        value="Chrome"
+        placeholder="输入该说说的来源，对应字段from"
+        maxlength="245"
+        placeholder=""
+        required
+      />
+    </div>
+    <div class="m-t-1">
+      <textarea
+        class="textarea"
+        rows="5"
+        name="text"
+        id="content"
+        placeholder="输入你的灵感瞬间..."
+        required=""
+      ></textarea>
+    </div>
+
+    <div class="btn" type="submit" name="submit" id="submit">
+      <span id="content_submit_text" class="text">发 表</span>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/message.js"></script>
+    <script src="../js/oper.js"></script>
+  </body>
+</html>
